@@ -20,8 +20,3 @@ while(current_savings < value_down_payment):
     annual_salary = annual_salary*(1+semi_annual_raise)
 
 print("Number of months:", months_spend)
-
-150000
-0.441
-1000000
-0.07
