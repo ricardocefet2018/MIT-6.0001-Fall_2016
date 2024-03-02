@@ -1,0 +1,5 @@
+# problem set's pdfs
+*.pdf
+
+# pkgtest
+/ps0/pkgtest.py
