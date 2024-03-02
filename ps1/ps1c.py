@@ -16,14 +16,15 @@ epslon = 100
 high = 10000
 low = 0
 
-portion_saved = (high+low)//2
-
 steps = 0
 previous_portion_saved = 0
+isPossibleToBuy = True
 while (abs(current_savings - value_down_payment) > epslon):
   steps += 1
   current_savings = 0
   monthly_salary = annual_salary/12
+
+  portion_saved = (high+low)//2
 
   for i in range(1, month_num+1):
     current_savings += current_savings * monthly_r
@@ -36,13 +37,13 @@ while (abs(current_savings - value_down_payment) > epslon):
   else:
     high = portion_saved
   
-  previous_portion_saved = portion_saved
-  portion_saved = (high+low)//2
-
   if (previous_portion_saved == portion_saved):
+    isPossibleToBuy = False
     break
 
-if portion_saved >= 999999:
+  previous_portion_saved = portion_saved
+
+if not isPossibleToBuy:
   print("It is not possible to pay the down payment in three years.")
 else:
   print("Best savings rate:", portion_saved/10000)
