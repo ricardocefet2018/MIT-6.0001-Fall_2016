@@ -1,5 +1,9 @@
-# problem set's pdfs
+# problem set's assets
 *.pdf
+*.txt
 
 # pkgtest
 /ps0/pkgtest.py
+
+# lecture's code
+test.py
