@@ -5,5 +5,8 @@
 # pkgtest
 /ps0/pkgtest.py
 
+# pycache
+*/__pycache__
+
 # lecture's code
 test.py
